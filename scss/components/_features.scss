@@ -1,0 +1,96 @@
+// Особливості
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;  
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+        
+    }
+    
+    &__item {
+        width: 100%;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            margin-bottom: 0;
+        }
+    }
+    
+} 
+
+// before
+.features__item::before {
+    display: block;
+    content:"";
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-color-first;
+}
+
+.features__item-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.features__item-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.features__item-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.features__item-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
+.features__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+    font-weight: $bolt-font-weight;
+    font-size: 14px;
+    line-height: 1.17;
+    text-align: center;
+    
+    text-transform: uppercase;
+
+    @media screen and (min-width: 780px) {
+        text-align: start;
+    }
+}
+
+.features__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: $normal-font-weight;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $secondary-text-color;
+}

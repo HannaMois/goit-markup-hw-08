@@ -1,0 +1,82 @@
+//  Наші клієнти 
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.clients__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: $bolt-font-weight;
+    font-size: 28px;
+        
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients__item {
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+        width: 210px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+}
+
+.clients__logo{
+    display: inline-block;
+    fill: $color-icon;
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // width: 170px;
+    height: 92px;
+    border: 1px solid $color-icon;
+    border-radius: 4px;  
+
+    &:hover,
+    &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+
+    transition: border $duration $timing-function;
+}
+
+    &:hover .clients__logo,
+    &:focus .clients__logo{
+        fill: $accent-color;
+
+    transition: fill $duration $timing-function;
+    }
+}
+

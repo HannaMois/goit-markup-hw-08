@@ -1,0 +1,203 @@
+//  Підвал 
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $background-color-footer;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &__container {
+
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 93px;
+        }
+}
+
+    &__box {
+        // padding-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: start;
+        }
+    }    
+}
+
+.wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 165px;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 70px;
+        margin-bottom: 0;
+    }
+    
+
+}
+.address__list {
+    margin-top: 20px;
+
+    & .address__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+}
+}
+
+.address__link--white {
+    color: $main-background-color;
+}
+
+//  Приєднуйтесь 
+
+.footer__join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+}
+    
+
+    &-title {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 20px;
+        
+        font-weight: $bolt-font-weight;
+        text-transform: uppercase;
+        color: $main-background-color;
+    }
+}
+
+//  Підпишіться на розсилку 
+.subscription {
+    text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 72px;
+        padding-bottom: 94px;
+    }
+    
+    &__form {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+}
+
+    &__title {
+        
+        margin-top: 0 auto;
+        margin-bottom: 20px;
+        
+        font-weight: $bolt-font-weight;
+        text-transform: uppercase;
+        color: $main-background-color;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+    }
+}
+
+.subscription__input {
+    padding-left: 16px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: $main-background-color;
+    background-color: $background-color-footer;
+    outline: none;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+
+    &:hover,
+    &:focus {
+    border-color: $accent-color;
+    cursor: pointer;
+
+    transition: border-color $duration $timing-function;
+}
+}
+
+ .footer__button {
+    display: flex;    
+    align-items: center;
+    padding: 10px 32px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    width: 200px;
+    height: 50px;
+    font-weight: $bolt-font-weight ;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    border-radius: 4px;
+    border-style: none;
+    
+    color: $main-background-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        margin-top: 0;
+    }
+    &:hover,
+    &:focus {
+        background-color: $button-accent-color;
+        cursor: pointer;
+        
+        transition: box-shadow $duration $timing-function;
+    }
+}
+
+.button__form-icon {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
